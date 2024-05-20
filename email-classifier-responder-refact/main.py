@@ -1,12 +1,9 @@
-# Import necessary modules and classes
-import os
+# Import necessary modules and classes from the langchain_community and crewai packages
 from langchain_community.llms import Ollama
 from crewai import Agent, Task, Crew, Process
 
-# Set environment variables for the API base, model name, and API key
-os.environ["OPENAI_API_BASE"] = "https://api.groq.com/openai/v1"
-os.environ["OPENAI_MODEL_NAME"] = 'llama3-70b-8192'
-os.environ["OPENAI_API_KEY"] = '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'
+# Initialize the language model with a specific model version
+model = Ollama(model="llama3")
 
 # Sample email to be classified and responded to
 email = "Your rent is due in 3 days."
@@ -17,7 +14,8 @@ classifier = Agent(
     goal="accurately classify emails based on their importance. Give every email one of these ratings: important, casual, or spam.",
     backstory="You are an AI assistant whose only job is to classify emails accurately and honestly. Do not be afraid to give emails bad ratings if they are not important. Your job is to help the user manage their inbox.",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=model
 )
 
 # Define the responder agent
@@ -26,7 +24,8 @@ responder = Agent(
     goal="Based on the importance of the email, write a concise and simple response. If the email is rated 'important' write a formal response, if the email is rated 'casual' write a casual response, and if the email is rated 'spam' ignore the email. No matter what, be very concise.",
     backstory="You are an AI assistant whose only job is to write short responses to emails based on their importance. The importance will be provided to you by the 'classifier' agent.",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=model
 )
 
 # Define the task for classifying the email
