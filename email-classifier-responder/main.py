@@ -1,11 +1,3 @@
-"""
-Agent Program Overview:
-Description: Simple email classifier between 2 agents. Agent #1 will receive an email
-and classify it. Based on this classification, Agent #1 will write a response.
-
-Code based on proiject from: @credit: David Ondrej 👍
-"""
-
 # Import necessary modules and classes from the langchain_community and crewai packages
 from langchain_community.llms import Ollama
 from crewai import Agent, Task, Crew, Process

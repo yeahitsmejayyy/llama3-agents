@@ -1,11 +1,3 @@
-"""
-Program Overview:
-Description: Simple email classifier between 2 agents. Agent #1 will receive an email
-and classify it. Based on this classification, Agent #1 will write a response.
-
-Credit: David Ondrej 👍
-"""
-
 # Import necessary modules and classes
 import os
 from langchain_community.llms import Ollama
