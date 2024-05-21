@@ -71,11 +71,11 @@ Feel free to explore, modify, and expand the capabilities of this project to sui
 ## Setup Instructions
 
 ### Prerequisites
-1. **Ollama**: Download the model installer called [Ollama](https://ollama.com). It is recommended to use the llama3:8b model, as the llama3:70b model requires a powerful computer. After installing the Ollama app, download the model by [clicking here](https://ollama.com/library/llama3) and running the command shown on the screen in your terminal.
+1. **Ollama**: Download the model installer called {:target="_blank"}. It is recommended to use the llama3:8b model, as the llama3:70b model requires a powerful computer. After installing the Ollama app, download the model by [clicking here](https://ollama.com/library/llama3){:target="_blank"} and running the command shown on the screen in your terminal.
    
-2. **Python**: Ensure Python is installed on your computer. You can download it from [here](https://www.python.org/downloads/).
+2. **Python**: Ensure Python is installed on your computer. You can download it from [here](https://www.python.org/downloads/){:target="_blank"}.
 
-3. **Groq**: Set up an account with [Groq](https://console.groq.com/login). Create your API keys [here](https://console.groq.com/keys) and get the base_url from [here](https://console.groq.com/docs/openai).
+3. **Groq**: Set up an account with [Groq](https://console.groq.com/login){:target="_blank"}. Create your API keys [here](https://console.groq.com/keys){:target="_blank"} and get the base_url from [here](https://console.groq.com/docs/openai).
 
 4. **Environment Variables**: Update your `.env` file with the appropriate environment variables.
 
@@ -122,7 +122,7 @@ Feel free to explore, modify, and expand the capabilities of this project to sui
 
 
 ### Credits 🍻
-I would like to give credit to the original creator whose video I watched named [David Ondrej](https://www.youtube.com/@DavidOndrej), who inspired me to create this projects initial setup and structure for his email responder example.
+I would like to give credit to the original creator whose video I watched named [David Ondrej](https://www.youtube.com/@DavidOndrej){:target="_blank"}, who inspired me to create this projects initial setup and structure for his email responder example.
 
 ### License
-This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/license/mit) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/license/mit){:target="_blank"} file for details.
