@@ -4,8 +4,26 @@
 
 
 
-## Overview
+## Backstory
 I was inspired to create this project after watching a YouTube video on using Llama3 models for AI tasks. The tutorial provided a basic working example, and I decided to refactor the code to make it more modular. Additionally, I implemented a configuration layer to easily switch between local and cloud setups.
+
+## Project Overview
+
+This repository serves as a boilerplate for quickly getting started with both local and cloud setups when working with large language models (LLMs). The primary goal is to provide a modular and easily configurable example of using agents to perform tasks that solve real-world problems. 
+
+### Purpose
+The project demonstrates how two agents can be used to solve the problem of auto-labeling and responding to emails. By using a classifier agent and a responder agent, the program can determine the importance of an email and generate an appropriate response based on the classification.
+
+### Capabilities
+- **Email Classification:** The classifier agent evaluates the content of an email and labels it as either 'important,' 'casual,' or 'spam.'
+- **Email Response:** Based on the classification, the responder agent generates a concise and relevant response to the email.
+
+### Extensibility
+This project is a foundational example and can be extended to create various types of Agent Swarms. These swarms can handle more complex workflows, integrate with different types of data sources, or perform additional tasks. The modular design allows developers to build on top of this example and enhance it to meet specific needs.
+
+
+Feel free to explore, modify, and expand the capabilities of this project to suit your specific use case.
+
 
 ## Folder Structure
 
@@ -63,8 +81,6 @@ I was inspired to create this project after watching a YouTube video on using Ll
 4. **Environment Variables**: Update your `.env` file with the appropriate environment variables.
 
 
-
-## Setup Instructions
 
 ### Steps
 
