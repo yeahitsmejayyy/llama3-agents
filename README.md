@@ -96,8 +96,8 @@ Feel free to explore, modify, and expand the capabilities of this project to sui
 
 3. **Setup your .env file** with the appropriate keys:
     ```env
-    OPENAI_API_BASE=<your-api-base-url>
-    OPENAI_MODEL_NAME=<your-model-name>
+    OPENAI_API_BASE=https://api.groq.com/openai/v1
+    OPENAI_MODEL_NAME=llama3-70b-8192
     OPENAI_API_KEY=<your-api-key>
     LOCAL_MODEL_NAME=llama3:8b
     MODEL_TYPE=local  # Change to `groq` for cloud model
