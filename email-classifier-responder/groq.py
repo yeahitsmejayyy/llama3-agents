@@ -6,7 +6,7 @@ from crewai import Agent, Task, Crew, Process
 # Set environment variables for the API base, model name, and API key
 os.environ["OPENAI_API_BASE"] = "https://api.groq.com/openai/v1"
 os.environ["OPENAI_MODEL_NAME"] = 'llama3-70b-8192'
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = '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' # This API KEY has since been deleted.
 
 # Sample email to be classified and responded to
 email = "Your rent is due in 3 days."

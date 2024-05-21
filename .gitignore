@@ -1,2 +1,3 @@
-/email-classifier-responder-refact/__pycache__
+
 /email-classifier-responder-refact/.env
+*__pycache__

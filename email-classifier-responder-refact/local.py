@@ -4,28 +4,22 @@ from crewai import Crew, Process
 from config import get_llm_model
 from agents import create_classifier_agent, create_responder_agent
 from tasks import create_classify_task, create_respond_task
- 
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Get the LLM model based on environment configuration
-llm_config  = get_llm_model()
+llm_model = get_llm_model()
 
-# Initialize the LLM model for the cloud configuration if needed
-# if not llm_model:
-#     model_name = os.getenv("OPENAI_MODEL_NAME")
-#     llm_model = Ollama(model=model_name)
-
-# Print the LLM model configuration to debug
-print(f"LLM Config: {llm_config }")
+# Print the LLM model to debug
+print(f"LLM Model: {llm_model}")
 
 # Sample email to be classified and responded to
 email = "Your rent is due in 3 days."
 
 # Create agents
-classifier = create_classifier_agent(llm_config)
-responder = create_responder_agent(llm_config)
+classifier = create_classifier_agent(llm_model)
+responder = create_responder_agent(llm_model)
 
 # Create tasks
 classify_email = create_classify_task(email, classifier)
