@@ -1,4 +1,8 @@
 # Llama3 Agents
+![Folder Structure](llama3_agents_cover.png)
+
+
+
 
 ## Overview
 I was inspired to create this project after watching a YouTube video on using Llama3 models for AI tasks. The tutorial provided a basic working example, and I decided to refactor the code to make it more modular. Additionally, I implemented a configuration layer to easily switch between local and cloud setups.
