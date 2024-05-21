@@ -1,25 +1,24 @@
-# Import necessary modules and classes
 from dotenv import load_dotenv
 from crewai import Crew, Process
 from config import get_llm_model
 from agents import create_classifier_agent, create_responder_agent
 from tasks import create_classify_task, create_respond_task
-
+ 
 # Load environment variables from .env file
 load_dotenv()
 
 # Get the LLM model based on environment configuration
-llm_model = get_llm_model()
+llm_config  = get_llm_model()
 
-# Print the LLM model to debug
-print(f"LLM Model: {llm_model}")
+# Print the LLM model configuration to debug
+print(f"LLM Config: {llm_config }")
 
 # Sample email to be classified and responded to
 email = "Your rent is due in 3 days."
 
 # Create agents
-classifier = create_classifier_agent(llm_model)
-responder = create_responder_agent(llm_model)
+classifier = create_classifier_agent(llm_config)
+responder = create_responder_agent(llm_config)
 
 # Create tasks
 classify_email = create_classify_task(email, classifier)
