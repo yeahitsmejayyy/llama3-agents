@@ -73,7 +73,7 @@ Feel free to explore, modify, and expand the capabilities of this project to sui
 ### Prerequisites
 1. **Ollama**: Download the model installer called [Ollama](https://ollama.com). It is recommended to use the llama3:8b model, as the llama3:70b model requires a powerful computer. After installing the Ollama app, download the model by [clicking here](https://ollama.com/library/llama3) and running the command shown on the screen in your terminal.
    
-2. **Python**: Ensure Python is installed on your computer. You can download it from [here](https://www.python.org/downloads/){:target="_blank"}.
+2. **Python**: Ensure Python is installed on your computer. You can download it from [here](https://www.python.org/downloads/).
 
 3. **Groq**: Set up an account with [Groq](https://console.groq.com/login). Create your API keys [here](https://console.groq.com/keys) and get the base_url from [here](https://console.groq.com/docs/openai).
 
